@@ -21,3 +21,7 @@ mongodb compass https://www.mongodb.com/products/compass
 dbngin https://dbngin.com/
 postman https://www.postman.com/
 kitty https://sw.kovidgoyal.net/kitty/binary/
+yabai
+skhd
+kitty brew install --cask font-fira-code-nerd-font
+oh-my-posh catppuccin
