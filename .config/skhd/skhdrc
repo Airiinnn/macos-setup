@@ -4,14 +4,14 @@ alt - c : yabai -m display --focus 2
 alt - v : yabai -m display --focus 3
 
 # Focus space
-alt - 1 : yabai -m space --focus 1
-alt - 2 : yabai -m space --focus 2
-alt - 3 : yabai -m space --focus 3
-alt - 4 : yabai -m space --focus 4
-alt - 5 : yabai -m space --focus 5
-alt - 6 : yabai -m space --focus 6
-alt - 7 : yabai -m space --focus 7
-alt - 8 : yabai -m space --focus 8
+alt - 1 : yabai -m space --focus dev0
+alt - 2 : yabai -m space --focus dev1
+alt - 3 : yabai -m space --focus web0
+alt - 4 : yabai -m space --focus web1
+alt - 5 : yabai -m space --focus tools
+alt - 6 : yabai -m space --focus comms
+alt - 7 : yabai -m space --focus misc0
+alt - 8 : yabai -m space --focus misc1
 
 # Move space
 shift + alt - x : yabai -m space --display 1
@@ -37,18 +37,18 @@ shift + alt - k : yabai -m window --swap north
 shift + alt - l : yabai -m window --swap east
 
 # Move window to space
-shift + alt - 1 : yabai -m window --space 1; yabai -m space --focus 1
-shift + alt - 2 : yabai -m window --space 2; yabai -m space --focus 2
-shift + alt - 3 : yabai -m window --space 3; yabai -m space --focus 3
-shift + alt - 4 : yabai -m window --space 4; yabai -m space --focus 4
-shift + alt - 5 : yabai -m window --space 5; yabai -m space --focus 5
-shift + alt - 6 : yabai -m window --space 6; yabai -m space --focus 6
-shift + alt - 7 : yabai -m window --space 7; yabai -m space --focus 7
-shift + alt - 8 : yabai -m window --space 8; yabai -m space --focus 8
+shift + alt - 1 : yabai -m window --space dev0; yabai -m space --focus dev0
+shift + alt - 2 : yabai -m window --space dev1; yabai -m space --focus dev1
+shift + alt - 3 : yabai -m window --space web0; yabai -m space --focus web0
+shift + alt - 4 : yabai -m window --space web1; yabai -m space --focus web1
+shift + alt - 5 : yabai -m window --space tools; yabai -m space --focus tools
+shift + alt - 6 : yabai -m window --space comms; yabai -m space --focus comms
+shift + alt - 7 : yabai -m window --space misc0; yabai -m space --focus misc0
+shift + alt - 8 : yabai -m window --space misc1; yabai -m space --focus misc1
 
 # Flip
-shift + alt - n : yabai -m space --mirror y-axis
-shift + alt - m : yabai -m space --mirror x-axis
+shift + alt - n : yabai -m space --mirror x-axis
+shift + alt - m : yabai -m space --mirror y-axis
 
 # Balace space
 ctrl + alt - space : yabai -m space --balance

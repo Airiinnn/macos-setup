@@ -32,6 +32,16 @@ yabai -m config window_opacity on
 yabai -m config active_window_opacity 1.0
 yabai -m config normal_window_opacity 0.9
 
+# Label spaces
+yabai -m space 1 --label dev0
+yabai -m space 2 --label dev1
+yabai -m space 3 --label web0
+yabai -m space 4 --label web1
+yabai -m space 5 --label tools
+yabai -m space 6 --label comms
+yabai -m space 7 --label misc0
+yabai -m space 8 --label misc1
+
 # Rules
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
