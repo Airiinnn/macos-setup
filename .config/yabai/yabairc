@@ -37,10 +37,12 @@ yabai -m space 1 --label dev0
 yabai -m space 2 --label dev1
 yabai -m space 3 --label web0
 yabai -m space 4 --label web1
-yabai -m space 5 --label tools
-yabai -m space 6 --label comms
-yabai -m space 7 --label misc0
-yabai -m space 8 --label misc1
+yabai -m space 5 --label web3
+yabai -m space 6 --label tools0
+yabai -m space 7 --label tools1
+yabai -m space 8 --label misc0
+yabai -m space 9 --label misc1
+yabai -m space 10 --label misc2
 
 # Rules
 yabai -m rule --add app="^System Settings$" manage=off
