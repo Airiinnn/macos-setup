@@ -32,7 +32,7 @@ kitty brew install --cask font-fira-code-nerd-font
 ## Oh My Posh
 Customize terminal
 
-Öÿhttps://ohmyposh.dev/docs
+https://ohmyposh.dev/docs
 
 ## GitHub SSH Key
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac
@@ -53,6 +53,7 @@ https://github.com/jenv/jenv
 https://www.jenv.be/
 
 Install Amazon Corretto
+
 https://aws.amazon.com/corretto/?filtered-posts.sort-by=item.additionalFields.createdDate&filtered-posts.sort-order=desc
 
 ## JetBrains Toolbox
