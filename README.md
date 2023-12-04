@@ -1,27 +1,73 @@
-# macos-setup
+# macOS Setup
 
-go through settings, check screen, keyboard, io
-add ssh key to github
-install miniconda
-install vscode, enable code terminal command
-chrome
-xcode
-homebrew
-install nvm for gh
-docker from website
-jetbrains toolbox
-https://youtrack.jetbrains.com/issue/TBX-5738
-update to beta 2.0
-spotify discord
-amazon coretto https://aws.amazon.com/corretto/?filtered-posts.sort-by=item.additionalFields.createdDate&filtered-posts.sort-order=desc
-jenv https://www.jenv.be/
-https://github.com/jenv/jenv
-yarn https://yarnpkg.com/getting-started/install
-mongodb compass https://www.mongodb.com/products/compass
-dbngin https://dbngin.com/
-postman https://www.postman.com/
-kitty https://sw.kovidgoyal.net/kitty/binary/
-yabai
-skhd
+## Homebrew
+Package manager
+
+https://brew.sh/
+
+## yabai
+Tiling window manager
+
+https://github.com/koekeishiya/yabai
+
+On update:
+
+Update `/private/etc/sudoers.d/yabai` with updated hash (`shasum -a 256 #(which yabai)`)
+
+## skhd
+Hotkeys for yabai
+
+https://github.com/koekeishiya/skhd
+
+## Kitty
+Terminal emulator
+
+https://sw.kovidgoyal.net/kitty/binary/
+
+Install font
+```
 kitty brew install --cask font-fira-code-nerd-font
-oh-my-posh catppuccin
+```
+
+## Oh My Posh
+Customize terminal
+
+Öÿhttps://ohmyposh.dev/docs
+
+## GitHub SSH Key
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=mac
+
+## Python (Miniconda)
+https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html
+
+## JavaScript (NVM)
+https://github.com/nvm-sh/nvm
+
+https://yarnpkg.com/getting-started/install
+
+## Java (jEnv)
+https://github.com/jenv/jenv
+
+https://www.jenv.be/
+
+Install Amazon Corretto
+https://aws.amazon.com/corretto/?filtered-posts.sort-by=item.additionalFields.createdDate&filtered-posts.sort-order=desc
+
+## JetBrains Toolbox
+https://www.jetbrains.com/toolbox-app/
+
+May need to update to Beta 2.0 for ARM support.
+
+## Misc
+- Firefox
+- Xcode
+- Docker
+- Discord
+- Spotify
+- MongoDB
+- DBngin
+- Postman
+- VSCode
+- VIA
