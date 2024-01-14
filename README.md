@@ -12,7 +12,7 @@ https://github.com/koekeishiya/yabai
 
 On update:
 
-Update `/private/etc/sudoers.d/yabai` with updated hash (`shasum -a 256 #(which yabai)`)
+Update `/private/etc/sudoers.d/yabai` with updated hash (`shasum -a 256 $(which yabai)`)
 
 ## skhd
 Hotkeys for yabai
