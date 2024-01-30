@@ -30,14 +30,10 @@ o.showmode = true
 
 -- Searching
 o.incsearch = true
-o.hlsearch = false
+o.hlsearch = true
 o.ignorecase = true
 o.smartcase = false
 
 -- True color terminal
 o.termguicolors = true
-
--- Disable comment continuation
-vim.cmd("autocmd BufEnter * set formatoptions-=cro")
-vim.cmd("autocmd BufEnter * setlocal formatoptions-=cro")
 
