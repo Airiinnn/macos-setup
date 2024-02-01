@@ -21,7 +21,7 @@ o.shiftwidth = 4
 o.extendtab = true
 
 -- UI config
-o.number = false
+o.number = true
 o.relativenumber = true
 o.cursorline = true
 o.splitbelow = true
