@@ -35,14 +35,14 @@ yabai -m config normal_window_opacity 0.9
 # Label spaces
 yabai -m space 1 --label dev0
 yabai -m space 2 --label dev1
-yabai -m space 3 --label web0
-yabai -m space 4 --label web1
-yabai -m space 5 --label web3
-yabai -m space 6 --label tools0
-yabai -m space 7 --label tools1
-yabai -m space 8 --label misc0
-yabai -m space 9 --label misc1
-yabai -m space 10 --label misc2
+yabai -m space 3 --label dev2
+yabai -m space 4 --label web0
+yabai -m space 5 --label web1
+yabai -m space 6 --label web2
+yabai -m space 7 --label tools0
+yabai -m space 8 --label tools0
+yabai -m space 9 --label misc0
+yabai -m space 10 --label misc1
 
 # Rules
 yabai -m rule --add app="^System Settings$" manage=off
@@ -52,3 +52,6 @@ yabai -m rule --add app="^JetBrains Toolbox$" manage=off
 JB_Apps='^(CLion|PyCharm|IntelliJ IDEA|WebStorm|Fleet|Aqua)$'
 yabai -m rule --add app="${JB_Apps}" manage=off
 yabai -m rule --add app="${JB_Apps}" title="^$" manage=on
+
+yabai -m rule --add app="Pritunl" manage=off
+
