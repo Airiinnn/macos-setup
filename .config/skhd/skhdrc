@@ -11,7 +11,7 @@ alt - 4 : yabai -m space --focus web0
 alt - 5 : yabai -m space --focus web1
 alt - 6 : yabai -m space --focus web2
 alt - 7 : yabai -m space --focus tools0
-alt - 8 : yabai -m space --focus tools0
+alt - 8 : yabai -m space --focus tools1
 alt - 9 : yabai -m space --focus misc0
 alt - 0 : yabai -m space --focus misc1
 # alt - 1 : yabai -m space --focus 1

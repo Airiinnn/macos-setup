@@ -40,7 +40,7 @@ yabai -m space 4 --label web0
 yabai -m space 5 --label web1
 yabai -m space 6 --label web2
 yabai -m space 7 --label tools0
-yabai -m space 8 --label tools0
+yabai -m space 8 --label tools1
 yabai -m space 9 --label misc0
 yabai -m space 10 --label misc1
 
