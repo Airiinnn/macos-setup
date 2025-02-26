@@ -6,8 +6,8 @@ after-startup-command = []
 start-at-login = true
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
-enable-normalization-flatten-containers = true
-enable-normalization-opposite-orientation-for-nested-containers = true
+enable-normalization-flatten-containers = false
+enable-normalization-opposite-orientation-for-nested-containers = false
 
 # Size of padding to indicate other applications available in that direction
 accordion-padding = 30
@@ -39,9 +39,9 @@ outer.right =      0
 
 [mode.main.binding]
 # Keybinds to start applications
-alt-enter = 'exec-and-forget open -na Kitty'
-alt-w = 'exec-and-forget open -na Firefox'
-alt-e = '''exec-and-forget osascript -e '
+alt-ctrl-enter = 'exec-and-forget open -a kitty'
+alt-ctrl-w = 'exec-and-forget open -na Firefox'
+alt-ctrl-e = '''exec-and-forget osascript -e '
 tell application "Finder"
     activate
     set home_path to (path to home folder as text)
@@ -51,6 +51,8 @@ end tell'
 
 # Toggle layouts
 alt-slash = 'layout tiles horizontal vertical'
+alt-m = 'layout tiles vertical'
+alt-n = 'layout tiles horizontal'
 alt-comma = 'layout accordion horizontal vertical'
 
 # Toggle fullscreen
@@ -107,9 +109,6 @@ alt-c = 'focus-monitor right'
 # Move workspace to monitor
 alt-shift-x = 'move-workspace-to-monitor prev'
 alt-shift-c = 'move-workspace-to-monitor next'
-
-# Change to most recently used workspace
-alt-tab = 'workspace-back-and-forth'
 
 # Change modes
 alt-shift-semicolon = 'mode service'

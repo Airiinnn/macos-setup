@@ -1,3 +1,15 @@
+# Default editor and terminal bindings
+export EDITOR="/usr/bin/vim"
+bindkey -v
+
+# Aliases
+alias ssh="kitten ssh"
+
+## Scala
+alias fbt="sbt scalafmtAll clean scalafmtCheckAll smoke:test coverage it:test test coverageReport"
+alias dcup="docker compose -f cicd/docker-compose.yml up -d"
+alias dcdown="docker compose -f cicd/docker-compose.yml down -v"
+
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -21,9 +33,20 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# jEnv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+# PostgreSQL
+export PATH="/Library/PostgreSQL/16/bin:$PATH"
 
 # Oh My Posh
-eval "$(oh-my-posh init zsh --config /Users/ai/.config/oh-my-posh/catppuccin-ai.omp.json)"
+# eval "$(oh-my-posh init zsh --config /Users/ai/.config/oh-my-posh/catppuccin-ai.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/catppuccin_mocha_ai.omp.json)"
+
+# SDKMAN!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# KMonad
+export PATH="/Users/ai/.local/bin:$PATH"
+
+# Zsh plugins
+ZSH_AUTOSUGGEST_STRATEGY=completion
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
