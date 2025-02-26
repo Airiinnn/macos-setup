@@ -5,20 +5,6 @@ Package manager
 
 https://brew.sh/
 
-## yabai
-Tiling window manager
-
-https://github.com/koekeishiya/yabai
-
-On update:
-
-Update `/private/etc/sudoers.d/yabai` with updated hash (`shasum -a 256 $(which yabai)`)
-
-## skhd
-Hotkeys for yabai
-
-https://github.com/koekeishiya/skhd
-
 ## Kitty
 Terminal emulator
 
@@ -47,15 +33,6 @@ https://github.com/nvm-sh/nvm
 
 https://yarnpkg.com/getting-started/install
 
-## Java (jEnv)
-https://github.com/jenv/jenv
-
-https://www.jenv.be/
-
-Install Amazon Corretto
-
-https://aws.amazon.com/corretto/?filtered-posts.sort-by=item.additionalFields.createdDate&filtered-posts.sort-order=desc
-
 ## JetBrains Toolbox
 https://www.jetbrains.com/toolbox-app/
 
@@ -72,3 +49,29 @@ May need to update to Beta 2.0 for ARM support.
 - Postman
 - VSCode
 - VIA
+
+# Outdated
+
+## yabai
+Tiling window manager
+
+https://github.com/koekeishiya/yabai
+
+On update:
+
+Update `/private/etc/sudoers.d/yabai` with updated hash (`shasum -a 256 $(which yabai)`)
+
+## skhd
+Hotkeys for yabai
+
+https://github.com/koekeishiya/skhd
+
+## Java (jEnv)
+https://github.com/jenv/jenv
+
+https://www.jenv.be/
+
+Install Amazon Corretto
+
+https://aws.amazon.com/corretto/?filtered-posts.sort-by=item.additionalFields.createdDate&filtered-posts.sort-order=desc
+
