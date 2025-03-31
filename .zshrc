@@ -3,6 +3,7 @@ export EDITOR="/usr/bin/vim"
 bindkey -v
 
 # Aliases
+alias ls='gls --color -h --group-directories-first'
 alias ssh="kitten ssh"
 
 ## Scala
@@ -50,3 +51,4 @@ export PATH="/Users/ai/.local/bin:$PATH"
 # Zsh plugins
 ZSH_AUTOSUGGEST_STRATEGY=completion
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
