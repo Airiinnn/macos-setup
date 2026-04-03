@@ -1,6 +1,17 @@
 # Commands to run after login and AeroSpace startup
 after-login-command = []
-after-startup-command = []
+after-startup-command = [
+    'workspace 1', 'move-workspace-to-monitor 1',
+    'workspace 2', 'move-workspace-to-monitor 2',
+    'workspace 3', 'move-workspace-to-monitor 1',
+    'workspace 4', 'move-workspace-to-monitor 1',
+    'workspace 5', 'move-workspace-to-monitor 1',
+    'workspace 6', 'move-workspace-to-monitor 1',
+    'workspace 7', 'move-workspace-to-monitor 1',
+    'workspace 8', 'move-workspace-to-monitor 1',
+    'workspace 9', 'move-workspace-to-monitor 1',
+    'workspace 10', 'move-workspace-to-monitor 1',
+]
 
 # Start AeroSpace at login
 start-at-login = true
@@ -47,6 +58,21 @@ tell application "Finder"
     set home_path to (path to home folder as text)
     make new Finder window to home_path
 end tell'
+'''
+
+# Keybings to move workspaces to monitors
+alt-ctrl-o = '''exec-and-forget
+aerospace workspace 1; aerospace move-workspace-to-monitor 1;
+aerospace workspace 2; aerospace move-workspace-to-monitor 1;
+aerospace workspace 3; aerospace move-workspace-to-monitor 1;
+aerospace workspace 4; aerospace move-workspace-to-monitor 2;
+aerospace workspace 5; aerospace move-workspace-to-monitor 1;
+aerospace workspace 6; aerospace move-workspace-to-monitor 1;
+aerospace workspace 7; aerospace move-workspace-to-monitor 1;
+aerospace workspace 8; aerospace move-workspace-to-monitor 1;
+aerospace workspace 9; aerospace move-workspace-to-monitor 2;
+aerospace workspace 10; aerospace move-workspace-to-monitor 2;
+aerospace workspace 4; aerospace workspace 1;
 '''
 
 # Toggle layouts
@@ -103,8 +129,8 @@ alt-shift-9 = 'move-node-to-workspace 9'
 alt-shift-0 = 'move-node-to-workspace 10'
 
 # Focus monitor
-alt-x = 'focus-monitor left'
-alt-c = 'focus-monitor right'
+alt-x = 'focus-monitor prev'
+alt-c = 'focus-monitor next'
 
 # Move workspace to monitor
 alt-shift-x = 'move-workspace-to-monitor prev'
@@ -112,7 +138,7 @@ alt-shift-c = 'move-workspace-to-monitor next'
 
 # Change modes
 alt-shift-semicolon = 'mode service'
-alt-r = 'mode resize'
+alt-shift-r = 'mode resize'
 
 [mode.service.binding]
 esc = 'mode main'
@@ -125,6 +151,10 @@ r = ['flatten-workspace-tree', 'mode main']
 
 [mode.resize.binding]
 esc = 'mode main'
+
+# Reset layout
+r = ['flatten-workspace-tree', 'mode main']
+
 h = 'resize width -50'
 j = 'resize height +50'
 k = 'resize height -50'
